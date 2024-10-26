@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Rating Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 30%; /* Adjust the width as necessary */
+            border-radius: 5px;
+        }
+        #leadingImageContainer img {
+            max-width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload and Rate Pictures</h1>
+
+        <!-- Image upload section for two images -->
+        <input type="file" id="imageUpload1" accept="image/*">
+        <input type="file" id="imageUpload2" accept="image/*">
+        <button onclick="uploadImages()">Upload Images</button>
+        
+        <div id="leadingImageContainer" style="display: none;">
+            <h2>Leading Image</h2>
+            <img id="leadingImage" src="" alt="Leading Image">
+            <div id="leadingImageRating"></div>
+        </div>
+
+        <div id="gallery"></div>
+        <h2>Leaderboard</h2>
+        <ol id="leaderboard"></ol>
+        <div id="totalPoints" style="margin-top: 20px;">Total Points: 0</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

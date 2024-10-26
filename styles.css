@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4A90E2;
+}
+
+#gallery {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 50%; /* Use full width for responsiveness */
+    max-width: 50%; /* Maintain the maximum width of each image */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    border-color: #4A90E2;
+}
+
+button {
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+.rating-result {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#leadingImageContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#leadingImage {
+    width: 50%; /* Responsive leading image */
+    max-width: 50%; /* Keep the max width 100% */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    border: 2px solid #4A90E2;
+    transition: transform 0.2s;
+}
+
+#leadingImage:hover {
+    transform: scale(1.05);
+}
+
+#leaderboard {
+    margin-top: 20px;
+}
+
+#leaderboard li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #4A90E2;
+}
+
+#totalPoints {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 12px);
+    font-size: 14px;
+}
+
+input[type="file"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
